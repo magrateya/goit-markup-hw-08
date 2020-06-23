@@ -1,0 +1,29 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+
+  & > li + li {
+    margin-left: 30px;
+  }
+}
+
+.link-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  fill: $icon-socio-color;
+  border: 1px solid $icon-socio-color;
+  border-radius: 4px;
+
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

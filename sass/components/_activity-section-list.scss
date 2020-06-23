@@ -1,0 +1,24 @@
+.activity-list > li {
+  position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.activity-list {
+  display: flex;
+
+  .link {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* border-radius: 0px 0px 4px 4px; */
+    background-color: $bg-title-activity-color;
+  }
+}

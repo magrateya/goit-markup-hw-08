@@ -1,0 +1,78 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $body-font-fam;
+  letter-spacing: $body-let-spacing;
+  font-size: $body-font-size;
+  line-height: $body-line-heit;
+}
+.advantages,
+.activity,
+.team,
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+header {
+  border-bottom: 1px solid $border-header-color;
+  & > .container {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.section {
+  .section-titles {
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  .activity-title {
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.advantages {
+  border-bottom: 1px solid $border-color;
+
+  .advantage-titles {
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+footer {
+  padding-top: 48px;
+  padding-bottom: 21px;
+  background-color: $bg-footer;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}

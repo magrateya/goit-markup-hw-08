@@ -1,0 +1,26 @@
+.join {
+  margin-right: 94px;
+
+  &-header {
+    display: block;
+    margin-bottom: 21px;
+
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.join-networks {
+  display: flex;
+
+  & > li + li {
+    margin-left: 10px;
+  }
+
+  .icon {
+    fill: $primary-white-color;
+  }
+}

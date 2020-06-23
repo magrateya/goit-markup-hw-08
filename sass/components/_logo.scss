@@ -1,0 +1,27 @@
+/* лого шапка */
+.link .links {
+  font-family: $logo-font-fam;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-web {
+  color: $accent-color;
+}
+.logo-studio {
+  color: $title-text-color;
+}
+/* лого футер */
+
+.footer-contacts {
+  .logo-link {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $logo-font-fam;
+    font-size: 22px;
+    line-height: 1.18;
+  }
+
+  .logo-studio {
+    color: $primary-white-color;
+  }
+}
