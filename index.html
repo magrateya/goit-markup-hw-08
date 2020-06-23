@@ -65,10 +65,13 @@
     <main>
       <!-- герой -->
       <section class="hero">
-        <h1 class="hero-title">
-          эффективные решения для вашего бизнеса
-        </h1>
-        <button data-modal-open class="hero-button">Заказать услугу</button>
+        <div class="container hero-box">
+          <h1 class="hero-title">
+            эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button data-modal-open class="hero-button">Заказать услугу</button>
+        </div>
 
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
@@ -140,7 +143,7 @@
                 <label class="checkbox-label">
                   <input class="checkbox" type="checkbox" name="consent" />
                   <span class="checkbox-icon"></span>
-                  <p class="chexkbox-text">
+                  <p class="checkbox-text">
                     Согласен с рассылкой и принимаю
                     <a href="" class="link checkbox-link">Условия договора</a>
                   </p>
@@ -152,7 +155,7 @@
         </div>
       </section>
       <!-- наши преимущества -->
-      <section class="section advantages container">
+      <section class="section advantages">
         <div class="container advantages-box">
           <h2 class="section-titles visually-hidden">наши преимущества</h2>
           <ul class="advantages-list">
@@ -547,19 +550,18 @@
               </li>
             </ul>
           </div>
-
-          <div>
-            <b class="join-header">подпишитесь на рассылку</b>
-            <form>
-              <input
-                type="text"
-                name="mail"
-                placeholder="E-mail"
-                class="mail-field"
-              />
-              <button class="submit">Подписаться</button>
-            </form>
-          </div>
+        </div>
+        <div class="join-form">
+          <b class="join-header">подпишитесь на рассылку</b>
+          <form>
+            <input
+              type="text"
+              name="mail"
+              placeholder="E-mail"
+              class="mail-field"
+            />
+            <button class="submit">Подписаться</button>
+          </form>
         </div>
         <!-- <p class="copyright">2020 | Developed by GoIT Students</p> -->
       </div>

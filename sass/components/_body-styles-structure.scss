@@ -11,20 +11,32 @@ body {
 .activity,
 .team,
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .header {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 header {
   border-bottom: 1px solid $border-header-color;
@@ -37,10 +49,10 @@ header {
 
 .section {
   .section-titles {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $title-text-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
   }
@@ -65,14 +77,15 @@ header {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
   }
 }
 footer {
-  padding-top: 48px;
-  padding-bottom: 21px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $bg-footer;
 }
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
+// .footer-box {
+//   // display: flex;
+//   // align-items: baseline;
+// }

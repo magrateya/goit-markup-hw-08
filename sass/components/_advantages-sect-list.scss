@@ -1,12 +1,22 @@
 .advantages-list {
-  display: flex;
-
-  & > li:not(:last-child) {
-    margin-right: 30px;
+  & > li {
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: 33.333%;
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
   }
-
-  & > li:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 

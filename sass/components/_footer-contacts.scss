@@ -1,19 +1,44 @@
+// .footer-box {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     align-items: baseline;
+//     padding: 0 76px 0 89px;
+//   }
+// }
 .footer-contacts {
-  margin-right: 69px;
+  margin-bottom: 60px;
+  // margin-right: 69px;
+  text-align: center;
+
+  // @media screen and (min-width: $tablet) {
+  //   margin-right: 165px;
+  // }
 
   & > ul > li {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   .link {
     color: $footer-text-contacts-color;
-
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
+    // font-size: 14px;
+    // line-height: 1.2;
   }
 }
 
 .link-item .link {
   color: $primary-white-color;
 }
+
+// .join-networks {
+//   display: flex;
+//   justify-content: center;
+
+//   & > li + li {
+//     margin-left: 10px;
+//   }
+
+//   .icon {
+//     fill: $primary-white-color;
+//   }
+// }

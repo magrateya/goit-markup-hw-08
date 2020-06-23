@@ -1,20 +1,23 @@
-.join {
-  margin-right: 94px;
+// .join {
+//   margin-bottom: 60px;
+//   // margin-right: 94px;
+//   text-align: center;
 
-  &-header {
-    display: block;
-    margin-bottom: 21px;
+//   &-header {
+//     display: block;
+//     margin-bottom: 20px;
 
-    color: $primary-white-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
-}
+//     color: $primary-white-color;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//   }
+// }
 
 .join-networks {
   display: flex;
+  justify-content: center;
 
   & > li + li {
     margin-left: 10px;
