@@ -1,7 +1,13 @@
 .join {
-  margin-bottom: 60px;
-  // margin-right: 94px;
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 94px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   &-header {
     display: block;
@@ -16,11 +22,14 @@
 }
 
 .join-form {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .submit {
   @include button(inline-flex);
   // display: inline-flex;
+  height: 50px;
   padding: 10px 28px 10px 29px;
   align-items: center;
   font-family: inherit;
@@ -50,7 +59,7 @@
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  min-width: 450px;
+  min-width: 358px;
   height: 50px;
   background-color: $bg-footer;
   border: 1px solid $form-email-text-color;
@@ -58,7 +67,7 @@
   border-radius: 4px;
   color: $form-email-text-color;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin: 0 50px 20px 50px;
   }
 }

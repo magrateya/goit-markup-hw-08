@@ -15,7 +15,7 @@ form {
 
 .form-input {
   @include button();
-  width: 370px;
+  width: 100%;
   padding: 12px 44px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -112,7 +112,7 @@ form {
   &-text {
     font-weight: normal;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: $primary-text-color;
   }

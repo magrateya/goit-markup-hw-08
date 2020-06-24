@@ -17,6 +17,9 @@
       width: calc((100% - 90px) / 3);
       margin: 15px;
     }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 180px) / 6);
+    }
   }
   & > li {
     @media screen and (max-width: 767px) {

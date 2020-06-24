@@ -25,6 +25,9 @@
         width: calc((100% - 60px) / 2);
         margin: 15px;
       }
+      @media screen and (min-width: $desktop) {
+        width: calc((100% - 120px) / 4);
+      }
     }
     & > li:not(:last-child) {
       @media screen and (max-width: 767px) {
