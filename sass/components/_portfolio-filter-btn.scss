@@ -26,19 +26,30 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 
-  // justify-content: center;
-  margin-bottom: 34px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   &-item + li {
     margin-left: 8px;
   }
   &-item:nth-child(4) {
-    margin-left: 0;
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      margin-left: 0;
+    }
   }
   &-item {
     margin-bottom: 15px;
   }
+
   &-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }

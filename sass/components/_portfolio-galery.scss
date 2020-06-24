@@ -12,8 +12,11 @@
 }
 
 .example {
-  // display: flex;
-  // flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   .example-title {
     color: $title-text-color;
@@ -32,9 +35,16 @@
 
 .example {
   .example-items {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
     /* position: relative; */
     // margin-right: 30px;
-    margin-bottom: 30px;
 
     // width: calc((100% - 2 * 30px) / 3);
     height: 404px;

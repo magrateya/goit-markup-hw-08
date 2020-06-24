@@ -84,7 +84,14 @@ form {
   position: absolute;
 
   &-field {
-    margin-bottom: 30px;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+  &-field {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 30px;
+    }
   }
 
   &-label {
