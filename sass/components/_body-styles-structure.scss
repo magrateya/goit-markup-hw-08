@@ -7,6 +7,9 @@ body {
   font-size: $body-font-size;
   line-height: $body-line-heit;
 }
+body.modal-open {
+  overflow: hidden;
+}
 .advantages,
 .activity,
 .team,
@@ -43,11 +46,19 @@ body {
   }
 }
 header {
+  position: relative;
   border-bottom: 1px solid $border-header-color;
   & > .container {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    // display: flex;
+    // justify-content: space-between;
   }
 }
 

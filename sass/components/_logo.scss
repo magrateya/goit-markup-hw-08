@@ -1,10 +1,19 @@
 /* лого шапка */
+.header .logo-link {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .header .logo-link {
+    padding: 16px 0 16px 0;
+  }
+}
+
 .link .links {
   font-family: $logo-font-fam;
   font-size: 26px;
   line-height: 1.2;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 24px;
   }
 }

@@ -1,17 +1,19 @@
 .contacts {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-
-  margin-left: auto;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  @media screen and (max-width: 767px) {
+    text-align: center;
+
+    & > li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
   & > li:not(:last-child) {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-right: 0;
       margin-bottom: 10px;
     }
@@ -23,6 +25,14 @@
   }
   @media screen and (max-width: 1199px) {
     font-size: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+
+    // & > li:not(:last-child) {
+    //   margin-bottom: 16px;
+    // }
   }
 }
 
