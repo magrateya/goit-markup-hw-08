@@ -116,6 +116,12 @@ form {
     letter-spacing: 0.03em;
     color: $primary-text-color;
   }
+  @media screen and (min-width: $desktop) {
+    &-text {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
 }
 
 .checkbox:checked + .checkbox-icon {
