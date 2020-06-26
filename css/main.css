@@ -1321,7 +1321,7 @@ form {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 767px) {
   .filter-item {
     margin-bottom: 15px;
   }
@@ -1344,10 +1344,17 @@ form {
 
 .card-content {
   padding: 20px 24px;
-  height: 110px;
   border: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1382,8 +1389,6 @@ form {
 }
 
 .example .example-items {
-  /* position: relative; */
-  height: 404px;
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
   -webkit-transition-property: opasity, -webkit-box-shadow, -webkit-transform;
@@ -1394,6 +1399,7 @@ form {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* position: relative; */
 }
 
 @media screen and (max-width: 767px) {
@@ -1418,6 +1424,7 @@ form {
   .example .example-items {
     width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1484,5 +1491,18 @@ form {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .example-items .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

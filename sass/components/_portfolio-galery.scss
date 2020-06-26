@@ -9,10 +9,13 @@
 
 .card-content {
   padding: 20px 24px;
-  height: 110px;
+  // height: 110px;
   border: 1px solid $border-color;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .example {
@@ -41,6 +44,14 @@
 
 .example {
   .example-items {
+    // height: 404px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+
+    transition-property: box-shadow, opasity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
@@ -56,15 +67,8 @@
     @media screen and (min-width: $desktop) {
       width: calc((100% - 2 * 30px) / 3);
       margin-right: 30px;
+      margin-bottom: 30px;
     }
-
-    height: 404px;
-    border-radius: 5px 5px 0px 0px;
-    overflow: hidden;
-
-    transition-property: box-shadow, opasity, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:nth-child(3n) {
       @media screen and (min-width: $desktop) {
@@ -123,4 +127,13 @@
     0px 1px 1px rgba(0, 0, 0, 0.12);
   transform: translateY(0);
   opacity: 1;
+}
+.example-items {
+  .link {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
 }
