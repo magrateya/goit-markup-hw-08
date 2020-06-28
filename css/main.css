@@ -322,6 +322,7 @@ footer {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 9;
   }
 }
 
