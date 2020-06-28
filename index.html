@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="сайт вебстудии" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
@@ -98,7 +99,7 @@
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-            <button data-modal-close class="modal-close-btn">
+            <button data-modal-close class="modal-close-btn" aria-label="close">
               <svg class="close" width="11" height="11">
                 <use href="./img/sprite.svg#icon-close"></use>
               </svg>
@@ -171,7 +172,9 @@
                   </p>
                 </label>
               </div>
-              <button type="submit" class="modal-submit">Отправить</button>
+              <button type="submit" class="modal-submit">
+                Отправить
+              </button>
             </form>
           </div>
         </div>
@@ -233,6 +236,7 @@
           <ul class="activity-list">
             <li>
               <img
+                srcset="./img/desktop-app.jpg 1x, ./img/desktop-app@2x.jpg 2x"
                 src="./img/desktop-app.jpg"
                 alt="Десктопные приложения"
                 width="370"
@@ -243,6 +247,7 @@
             </li>
             <li>
               <img
+                srcset="./img/tell-app.jpg 1x, ./img/tell-app@2x.jpg 2x"
                 src="./img/tell-app.jpg"
                 alt="Мобильные приложения"
                 width="370"
@@ -253,6 +258,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./img/design-decision.jpg    1x,
+                  ./img/design-decision@2x.jpg 2x
+                "
                 src="./img/design-decision.jpg"
                 alt="Дизайнерские решения"
                 width="370"
@@ -271,7 +280,31 @@
           <h2 class="section-titles">Наша команда</h2>
           <ul class="team-list">
             <li>
-              <img src="./img/smith.jpg" alt="John Smith photo" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk/smith270.jpg    1x,
+                    ./img/team-desk/smith540@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team-tab/smith354.jpg    1x,
+                    ./img/team-tab/smith708@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="
+                    ./img/team-mob/smith450.jpg    1x,
+                    ./img/team-mob/smith900@2x.jpg 2x
+                  "
+                  src="./img/team-mob/smith450.jpg"
+                  alt="John Smith photo"
+                />
+              </picture>
               <p class="team-members">John Smith</p>
               <p class="profession">Product Designer</p>
 
@@ -315,11 +348,32 @@
               </ul>
             </li>
             <li>
-              <img
-                src="./img/stewart.jpg"
-                alt="Marta Stewart photo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk/stewart270.jpg    1x,
+                    ./img/team-desk/stewart540@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team-tab/stewart354.jpg    1x,
+                    ./img/team-tab/stewart708@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="
+                    ./img/team-mob/stewart450.jpg    1x,
+                    ./img/team-mob/stewart900@2x.jpg 2x
+                  "
+                  src="./img/team-mob/stewart450.jpg"
+                  alt="Marta Stewart photo"
+                />
+              </picture>
+
               <p class="team-members">Marta Stewart</p>
               <p class="profession">Frontend Developer</p>
 
@@ -364,7 +418,32 @@
             </li>
 
             <li>
-              <img src="./img/jakis.jpg" alt="Robert Jakis photo" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk/jakis270.jpg    1x,
+                    ./img/team-desk/jakis540@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team-tab/jakis354.jpg    1x,
+                    ./img/team-tab/jakis708@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="
+                    ./img/team-mob/jakis450.jpg    1x,
+                    ./img/team-mob/jakis900@2x.jpg 2x
+                  "
+                  src="./img/team-mob/jakis450.jpg"
+                  alt="Robert Jakis photo"
+                />
+              </picture>
+
               <p class="team-members">Robert Jakis</p>
               <p class="profession">Marketing</p>
 
@@ -408,7 +487,32 @@
               </ul>
             </li>
             <li>
-              <img src="./img/doe.jpg" alt="Martin Doe photo" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-desk/doe270.jpg    1x,
+                    ./img/team-desk/doe540@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team-tab/doe354.jpg    1x,
+                    ./img/team-tab/doe708@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="
+                    ./img/team-mob/doe450.jpg    1x,
+                    ./img/team-mob/doe900@2x.jpg 2x
+                  "
+                  src="./img/team-mob/doe450.jpg"
+                  alt="Martin Doe photo"
+                />
+              </picture>
+
               <p class="team-members">Martin Doe</p>
               <p class="profession">UI Designer</p>
 
