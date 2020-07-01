@@ -1,7 +1,7 @@
 .contacts {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 767px) {
@@ -23,8 +23,10 @@
       margin-right: 30px;
     }
   }
-  @media screen and (max-width: 1199px) {
+
+  @media screen and (min-width: $tablet) {
     font-size: 12px;
+    line-height: 1.14;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -55,5 +57,9 @@
   &:hover,
   &:focus {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 8px;
   }
 }

@@ -5,6 +5,8 @@
 }
 
 .footer-box {
+  // margin-bottom: 60px;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
@@ -12,12 +14,18 @@
       justify-content: space-between;
       padding: 0 76px 0 89px;
     }
+
     // justify-content: space-between;
     // padding: 0 76px 0 89px;
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .footer-contacts {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (max-width: 1199px) {
     text-align: center;
@@ -27,9 +35,9 @@
     margin: 0px 69px 0px 0px;
   }
 
-  & > ul > li {
-    margin-bottom: 8px;
-  }
+  // & > ul > li {
+  //   margin-bottom: 8px;
+  // }
 
   .link {
     color: $footer-text-contacts-color;
