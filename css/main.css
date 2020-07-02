@@ -322,7 +322,7 @@ footer {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 60px 138px;
+    padding: 60px 0px;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
   }
@@ -502,7 +502,7 @@ footer {
 }
 
 .hero-box {
-  padding: 118px 60px;
+  padding: 118px 0px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1173,6 +1173,10 @@ form {
   .footer-box {
     margin-bottom: 60px;
   }
+}
+
+.footer-contacts ul > li:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 767px) {
